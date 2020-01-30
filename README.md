@@ -48,4 +48,3 @@ Este script, a pesar de ser muy simple y tener pocas funciones, es uno de los m�
 
 Este script controla todos los aspectos relacionados con la vida del jugador, tanto a nivel gráfico como de programación. Cada vez que el jugador realiza una acción que le hace perder vida, se llaman a los métodos de esta clase para reflejar esta característica gráficamente; se ve un aumento en la barra roja de vida, y por tanto una disminución en la barra verde. Por otro lado, la importancia de este script recae en la recarga de la escena. Se comprueba en cada frame que el nivel de vida sea superior a 0; si no lo es, nos aparecerá un mensaje en el canvas que indica que has perdido, activando después dos opciones, Restart o Exit. Si pulsamos restart, se recarga la escena; el jugador vuelve a empezar desde el punto de partida, y se reinician todos los componentes y la barra de vida. 
 
-**
