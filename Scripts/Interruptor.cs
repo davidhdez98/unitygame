@@ -14,24 +14,17 @@ public class Interruptor : MonoBehaviour
 
     private void OnEnable()
     {
-        DelegateHandler.Switch += Sonido_Focos;
-        //DelegateHandler.Switch += Mover_Palanca;
+        DelegateHandler.Switch += Sonido_Focos;        
     }
 
-    void Sonido_Focos ()
+    void Sonido_Focos ()                                //Suenan los fluorescentes cuando tocas el interruptor
     {
         fluorescente.clip = apagon;
         fluorescente.Play();
-    }
-
-    void Mover_Palanca ()
-    {
-
-    }
+    }   
 
     private void OnDisable()
     {
         DelegateHandler.Switch -= Sonido_Focos;
-        //DelegateHandler.Switch -= Mover_Palanca;
     }
 }
