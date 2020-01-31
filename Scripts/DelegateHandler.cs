@@ -23,51 +23,51 @@ public class DelegateHandler : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         string nombre = collision.gameObject.name;
-        switch (nombre)     //Dependiendo del nombre del objeto, se lanzará un evento u otro
+        switch (nombre)                             //Dependiendo del nombre del objeto, se lanzará un evento u otro
         {
             case "Scary":            
-                Click();        //Evento para que el zombie persiga al jugador
+                Click();                            //Evento para que el zombie persiga al jugador
                 break;
             case "Sensor1":
-                Lampara1();     //Evento para encender la primera lámpara del pasillo
+                Lampara1();                         //Evento para encender la primera lámpara del pasillo
                 break;
             case "Sensor2":
-                Lampara2();     //Evento para encender la segunda lámpara del pasillo
+                Lampara2();                         //Evento para encender la segunda lámpara del pasillo
                 break;
             case "Sensor3":
-                Lampara3();     //Evento para encender la tercera lámpara del pasillo
+                Lampara3();                         //Evento para encender la tercera lámpara del pasillo
                 break;
             case "Sensor4":
-                Lampara4();     //Evento para encender la cuarta y quinta lámpara del pasillo
+                Lampara4();                         //Evento para encender la cuarta y quinta lámpara del pasillo
                 break;
             case "Interruptor":
-                Switch();       //Evento para encender los fluorescentes de la planta baja
+                Switch();                           //Evento para encender los fluorescentes de la planta baja
                 break;
             case "Vuelta":
-                Evento_Ascensor2();    //Evento para que el monstruo persiga al jugador            
+                Evento_Ascensor2();                 //Evento para que el monstruo persiga al jugador            
                 break;
             case "Monstruo":
-                bv.Daño(100);   //Evento para matar al jugador si el monstruo lo toca
+                bv.Daño(100);                       //Evento para matar al jugador si el monstruo lo toca
                 break;
             case "Door":
-                Door();
-                break;
+                Door();                             //Evento para abrir la puerta del armario, activar a Agatha y salir mensaje de que 
+                break;                              //necesitas una llave
             default:
                 break;
 
         }
 
         if (collision.gameObject.tag == "Death")
-            bv.Daño(10);            //Evento para quitar vida al jugador
+            bv.Daño(10);                            //Evento para quitar vida al jugador al tocar el zombie
 
         else if (nombre == "agatha")        
-            bv.Daño(40);
+            bv.Daño(40);                            //Evento para quitar vida al jugador al tocar a Agatha
 
         else if (nombre == "SensorAG")
-            ag.Movimiento();
+            ag.Movimiento();                        //Evento para mover a Agatha
 
         else if (collision.gameObject.tag == "Puerta")
-            Sonido();               //Evento para abrir una puerta
+            Sonido();                               //Evento para abrir una puerta
     }
 
     private void OnTriggerEnter(Collider other)
