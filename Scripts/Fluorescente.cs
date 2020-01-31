@@ -17,12 +17,12 @@ public class Fluorescente : MonoBehaviour
         DelegateHandler.Switch += Encender_Foco;
     }
 
-    void Encender_Foco()
+    void Encender_Foco()                                            //Enciende los fluorescentes 
     {
         StartCoroutine(ExampleCoroutine());
     }
 
-    IEnumerator ExampleCoroutine()
+    IEnumerator ExampleCoroutine()                                  //Después de 4 segundos apaga los fluorescentes
     {
         luz.enabled = true;
         yield return new WaitForSeconds(4);
