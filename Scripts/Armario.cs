@@ -4,43 +4,18 @@ using UnityEngine;
 
 public class Armario : MonoBehaviour
 {
-    public GameObject go;
-    public static Armario Instance;
+    public GameObject go;                       
 
-    void Awake()
+    private void OnEnable()
     {
-        if (Instance != null)
-        {
-            GameObject.Destroy(Instance);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
+        DelegateHandler.Door += Abrir_Puerta;     //Clase suscrita al evento Door, invocado al intentar acceder a la puerta de metal
     }
 
-        private void OnEnable()
-    {
-        DelegateHandler.Door += Abrir_Puerta;
-    }
-
-    void Abrir_Puerta()
+    void Abrir_Puerta()                            //Abre la puerta del armario para poder ver la llave de la puerta de metal
     {
         transform.position = new Vector3(-309, 0, 394);
         transform.Rotate(new Vector3(0, -25, 0));
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        DontDestroyOnLoad(this);
-    }
+    }   
 
     private void OnDisable()
     {
