@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Camilla : MonoBehaviour
 {
-
     public Rigidbody rb;
     public float avance;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        avance = 18;
+        avance = 20;                                                        //Velocidad a la que se mueve la camilla
     }
 
     void OnEnable()
@@ -19,7 +18,7 @@ public class Camilla : MonoBehaviour
         DelegateHandler.Lampara4 += MoverCamilla;    
     }
 
-    void MoverCamilla ()
+    void MoverCamilla ()                                                    //Mueve la camilla 
     {
         rb.AddForce(new Vector3(0, 0, 5) * avance, ForceMode.Acceleration);
     }
