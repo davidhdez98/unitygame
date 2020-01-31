@@ -12,12 +12,12 @@ public class Agatha : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        avance = 23;
+        avance = 23;                    //Velocidad a la que avanza Agatha
         fuenteaudio = GetComponent<AudioSource>();
         gameObject.SetActive(false);
     }
 
-    public void Movimiento()
+    public void Movimiento()        //Activa el gameobject Agatha, reproduce un grito y mueve al personaje hacia delante
     {
         gameObject.SetActive(true);
         rb.AddForce(new Vector3(3, 0, 0) * avance, ForceMode.Acceleration);
