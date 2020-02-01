@@ -42,7 +42,9 @@ Otras técnicas implementadas son:
 - Subrutinas. Creación de subrutinas para utilizar la función WaitforSeconds y generar así un tiempo de espera en ciertas funciones.
 - Ocludee Static. Con esta opción añadida sobre un gameobject conseguimos que este objeto únicamente se renderice cuando se encuentre dentro del ángulo de la cámara. Cuando salga del plano, desaparece, evitando la sobrecarga y mejorando la renderización del juego. Por ejemplo, objetos como la recepción de la planta baja y las sillas de espera tienen añadida esta característica. 
 - Ocluder Static. Esta función es análoga a la anterior. La diferencia es que, mientras el anterior se aplica sobre objetos pequeños, esta opción se aplica sobre objetos grandes que tapen la visión de objetos que se encuentren detrás. Por ejemplo, toda la fachada del hospital incluye esta opción.
+- Input Manager. Utilizamos esta opción para mapear el mando de PS4 y poder jugar con él.
 De entre todos los scripts implementados, comentaremos algunos de los más importantes, ya sea por su funcionalidad o por su abundante utilización.
+
 
 **DelegateHandler**
 
@@ -78,4 +80,20 @@ Este es uno de los scripts más importantes del proyecto. Con él gestionamos la
    Uno de los principales problemas que hemos encontrado a la hora de realizar el juego es su ralentización en tiempo de ejecución. Al añadir tantos prefabs, el peso total del juego es de más de tres GB. Además, los prefabs incluyen muchos elementos, cada uno de ellos con una gran cantidad de polígonos, de modo que cargar todo esto en la escena implica renderizar muchos detalles, y el juego acababa yendo demasiado lento. Para solucionarlo eliminamos algunos de estos prefabs y nos quedamos con una escena un poco más sencilla, sin perder información importante. Por otro lado, también ocultamos algunos componentes de prefabs que no eran necesarios. Por ejemplo, las bisagras de las puertas, que dada la oscuridad total de la escena, es un detalle que realmente no se llega a apreciar. Este problema no hubiera surgido si hubiésemos utilizado prefabs menos realistas, diseñados para juegos de móvil. Los prefabs empleados son quizás más enfocados a juegos de consolas más potentes. 
    
    Otro problema fue conseguir mover al jugador con el mando de PS4 en Android. Si bien mapeamos correctamente el mando, los botones sí funcionaban pero no los joysticks. Cuando logramos solucionarlo, comprobamos que el jugador no se movía en la posición hacia la que miras con la cámara, sino siempre en la misma dirección, dificultando la movilidad. Sin embargo, finalmente logramos arreglar este problema.
+   
+# Trabajo en equipo
+
+   Con respecto al trabajo en equipo durante la realización del proyecto, hay algunas partes del juego desarrolladas únicamente por un miembro del grupo, mientras que otras han sido implementadas de forma conjunta. A continuación nombraremos algunas de las partes más importantes del trabajo e indicaremos la coordinación entre los miembros del grupo.
+- Desarrollo del bosque: David
+- Mapeo del mando: David
+- Modificación scripts de movimiento: Eduardo
+- Diseño planta baja del hospital: Eduardo
+- Diseño primera planta del hospital: David
+- Historia del juego: Eduardo y David
+- Canvas y Google Cardboard: Eduardo y David
+- Documentación del código: Eduardo y David
+- README.md: Eduardo y David
+- Diapositivas: Eduardo
+- Ocluder Static y Ocludee Static: David
+- Optimización del juego: Eduardo
    
