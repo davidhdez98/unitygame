@@ -2,7 +2,7 @@
 # Introducción
    Este juego ha sido desarrollado con una temática de terror. Está diseñado para jugarlo en cualquier dispositivo con una versión de Android de 9.0, aunque se puede generar para dispositivos con versiones más antiguas. Se utilizará un mando de Play Station 4 para mover al jugador por la escena, y el sistema de VR de Google Cardboard para mover la cámara.
    
-   El juego se desarrolla en un hospital. En primer lugar, el personaje se encontrará en un bosque, por el que debe ir caminando hasta encontrarse en la fachada del hospital. Una vez allí, podrá acceder al interior del mismo, que cuenta con dos plantas. El objetivo principal del juego es entrar al hospital para rescatar a una chica que se encuentra allí encerrada. Tanto en el interior del hospital como en el bosque habrá una serie de obstáculos (monstruos, zombies, etc) que, de entrar en contacto con el jugador, le quitarán vida. Cuando el jugador pierda toda la vida, morirá y se le preguntará si quiere reiniciar el juego.
+   El juego se desarrolla en un hospital. En primer lugar, el personaje se encontrará en un bosque, por el que debe ir caminando hasta encontrarse en la fachada del hospital. Una vez allí, podrá acceder al interior del mismo, que cuenta con dos plantas. El objetivo principal del juego es entrar al hospital para rescatar a una chica que se encuentra allí encerrada. Tanto en el interior del hospital como en el bosque habrá una serie de obstáculos (monstruos, zombies, etc) que, de entrar en contacto con el jugador, le quitarán vida. Cuando el jugador pierda toda la vida, morirá y se le preguntará si quiere reiniciar el juego. Se recomienda la utilización de auriculares para una mejor experiencia y un mayor grado de inmersión en el juego. 
    
   Para dividir las distintas zonas del juego, vamos a crear una escena en la que va a haber dos terrenos, uno para el bosque y otro para el hospital. 
   
@@ -97,4 +97,6 @@ Este es uno de los scripts más importantes del proyecto. Con él gestionamos la
 - Ocluder Static y Ocludee Static: David
 - Optimización del juego: Eduardo
 - Búsqueda de prefabs: Eduardo y David
+A continuación se adjunta un gif de 4 minutos en el que se ve la ejecución del juego completo, así como el mismo archivo en formato de vídeo para poder visualizarlo con sonido. 
+![Gift](
    
