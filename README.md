@@ -96,4 +96,5 @@ Este es uno de los scripts más importantes del proyecto. Con él gestionamos la
 - Diapositivas: Eduardo
 - Ocluder Static y Ocludee Static: David
 - Optimización del juego: Eduardo
+- Búsqueda de prefabs: Eduardo y David
    
