@@ -97,6 +97,6 @@ Este es uno de los scripts más importantes del proyecto. Con él gestionamos la
 - Ocluder Static y Ocludee Static: David
 - Optimización del juego: Eduardo
 - Búsqueda de prefabs: Eduardo y David
-A continuación se adjunta un gif de 4 minutos en el que se ve la ejecución del juego completo, así como el mismo archivo en formato de vídeo para poder visualizarlo con sonido. 
+A continuación se adjunta un vídeo de 4 minutos en el que se ve la ejecución del juego completo para poderlo visualizar con sonido. No se adjunta archivo Gif porque es más pesado que el archivo de vídeo, y ya en este último se aprecia el funcionamiento del juego.
 ![Gift](
    
