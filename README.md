@@ -97,6 +97,7 @@ Este es uno de los scripts más importantes del proyecto. Con él gestionamos la
 - Ocluder Static y Ocludee Static: David
 - Optimización del juego: Eduardo
 - Búsqueda de prefabs: Eduardo y David
+
 A continuación se adjunta un vídeo de 4 minutos en el que se ve la ejecución del juego completo para poderlo visualizar con sonido. No se adjunta archivo Gif porque es más pesado que el archivo de vídeo, y ya en este último se aprecia el funcionamiento del juego. Para poderlo visualizar es necesario descargarlo de GitHub. Hay que tener en cuenta que el formato del vídeo no es demasiado nítido, ya que si generábamos el vídeo con una mayor calidad, pesaba demasiado y no podíamos subirlo a GitHub. Sin embargo, si se prefiere visualizar el vídeo en mejor calidad, en la tarea del campus virtual sí está adjunto el vídeo en HD. 
 
 ![Vídeo](https://github.com/davidhdez98/unitygame/blob/master/Ejecuci%C3%B3n%20del%20juego.wmv)
